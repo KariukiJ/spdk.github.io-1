@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-ok"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -62,6 +68,12 @@
                 <a href="https://github.com/spdk/spdk/wiki/Roadmap">
                   <i class="glyphicon glyphicon-map-marker"></i>
                   <span class="box-name">Roadmap</span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="https://github.com/spdk/spdk/wiki/News">
+                  <i class="glyphicon glyphicon-bullhorn"></i>
+                  <span class="box-name">News</span>
                 </a>
               </li>
             </ul>
@@ -110,6 +122,9 @@ Files</h2></td></tr>
 <tr class="memitem:copy__engine_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copy__engine_8h.html">copy_engine.h</a></td></tr>
 <tr class="memdesc:copy__engine_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory copy offload engine abstraction layer. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:crc32_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc32_8h.html">crc32.h</a></td></tr>
+<tr class="memdesc:crc32_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC-32 utility functions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:endian_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html">endian.h</a></td></tr>
 <tr class="memdesc:endian_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Endian conversion functions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +167,9 @@ Files</h2></td></tr>
 <tr class="memitem:log_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html">log.h</a></td></tr>
 <tr class="memdesc:log_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging interfaces. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:lvol_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html">lvol.h</a></td></tr>
+<tr class="memdesc:lvol_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logical Volume Interface. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:mmio_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mmio_8h.html">mmio.h</a></td></tr>
 <tr class="memdesc:mmio_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory-mapped I/O utility functions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,7 +195,7 @@ Files</h2></td></tr>
 <tr class="memdesc:pci__ids_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCI device ID list. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:scsi_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html">scsi.h</a></td></tr>
-<tr class="memdesc:scsi_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI to blockdev translation layer. <br /></td></tr>
+<tr class="memdesc:scsi_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI to bdev translation layer. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:scsi__spec_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi__spec_8h.html">scsi_spec.h</a></td></tr>
 <tr class="memdesc:scsi__spec_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI specification definitions. <br /></td></tr>
@@ -194,14 +212,12 @@ Files</h2></td></tr>
 <tr class="memitem:util_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html">util.h</a></td></tr>
 <tr class="memdesc:util_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">General utility functions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:version_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="version_8h.html">version.h</a></td></tr>
+<tr class="memdesc:version_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPDK version number definitions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:vhost_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html">vhost.h</a></td></tr>
 <tr class="memdesc:vhost_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPDK vhost. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>

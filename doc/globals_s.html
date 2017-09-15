@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-ok"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -64,6 +70,12 @@
                   <span class="box-name">Roadmap</span>
                 </a>
               </li>
+              <li role="presentation">
+                <a href="https://github.com/spdk/spdk/wiki/News">
+                  <i class="glyphicon glyphicon-bullhorn"></i>
+                  <span class="box-name">News</span>
+                </a>
+              </li>
             </ul>
           </div>
         </section>
@@ -76,7 +88,7 @@
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>spdk_allocate_thread()
-: <a class="el" href="io__channel_8h.html#a7d65cb9360ee10b47a62801e09cb6352">io_channel.h</a>
+: <a class="el" href="io__channel_8h.html#a42b58701b6440005e866e6e7dd080bae">io_channel.h</a>
 </li>
 <li>spdk_app_fini()
 : <a class="el" href="event_8h.html#a09034efb3911efa02c1b260c5ef2160e">event.h</a>
@@ -111,11 +123,23 @@
 <li>spdk_app_stop()
 : <a class="el" href="event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83">event.h</a>
 </li>
-<li>spdk_bdev_claim()
-: <a class="el" href="bdev_8h.html#af5600670a9cb061bb5bd9ed4d8dd7046">bdev.h</a>
+<li>spdk_bdev_close()
+: <a class="el" href="bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6">bdev.h</a>
+</li>
+<li>spdk_bdev_desc_get_bdev()
+: <a class="el" href="bdev_8h.html#ac6418cfa0e9076ef7dafa7753c4c2028">bdev.h</a>
+</li>
+<li>spdk_bdev_first()
+: <a class="el" href="bdev_8h.html#a578b0a9d444ddbb23c8181d9a5ea4f46">bdev.h</a>
+</li>
+<li>spdk_bdev_first_leaf()
+: <a class="el" href="bdev_8h.html#a717d20a033b87c5de88892c78ae55f4c">bdev.h</a>
 </li>
 <li>spdk_bdev_flush()
-: <a class="el" href="bdev_8h.html#a79093fc354725f29207cd9038ac4144a">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a7105b63cc84037543d9472ab33c8be93">bdev.h</a>
+</li>
+<li>spdk_bdev_flush_blocks()
+: <a class="el" href="bdev_8h.html#a9d84cd937e760cf32756654dc9720ed4">bdev.h</a>
 </li>
 <li>spdk_bdev_free_io()
 : <a class="el" href="bdev_8h.html#a536a365e14bc4f3ddf76b9340958ebd8">bdev.h</a>
@@ -127,19 +151,19 @@
 : <a class="el" href="bdev_8h.html#ab4d238484b372a77ba130fbb70f83519">bdev.h</a>
 </li>
 <li>spdk_bdev_get_io_channel()
-: <a class="el" href="bdev_8h.html#a1b4015ff9aba44261f3b36cde064963a">bdev.h</a>
+: <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e">bdev.h</a>
 </li>
 <li>spdk_bdev_get_io_stat()
 : <a class="el" href="bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2">bdev.h</a>
-</li>
-<li>spdk_bdev_get_max_unmap_descriptors()
-: <a class="el" href="bdev_8h.html#a055368a3ce95cb597c99e9920dd025a4">bdev.h</a>
 </li>
 <li>spdk_bdev_get_name()
 : <a class="el" href="bdev_8h.html#ad97a853dcb945bf004817424b7aa28af">bdev.h</a>
 </li>
 <li>spdk_bdev_get_num_blocks()
 : <a class="el" href="bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5">bdev.h</a>
+</li>
+<li>spdk_bdev_get_optimal_io_boundary()
+: <a class="el" href="bdev_8h.html#aa79625889e23318204d235da36a4fa02">bdev.h</a>
 </li>
 <li>spdk_bdev_get_product_name()
 : <a class="el" href="bdev_8h.html#a1cb4d1f8822c30be8c5d9c5dc3e62483">bdev.h</a>
@@ -163,34 +187,55 @@
 : <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">bdev.h</a>
 </li>
 <li>spdk_bdev_nvme_admin_passthru()
-: <a class="el" href="bdev_8h.html#af0ff477709a4931e98b10c2f39d2d9fc">bdev.h</a>
+: <a class="el" href="bdev_8h.html#ae2249ef71e7125338b6cebf935a881ab">bdev.h</a>
 </li>
 <li>spdk_bdev_nvme_io_passthru()
-: <a class="el" href="bdev_8h.html#a6073d0f21b837b1afc22859c1d067d77">bdev.h</a>
+: <a class="el" href="bdev_8h.html#ab172cf6afc9ef154bd823b91b09dee87">bdev.h</a>
+</li>
+<li>spdk_bdev_open()
+: <a class="el" href="bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff">bdev.h</a>
 </li>
 <li>spdk_bdev_read()
-: <a class="el" href="bdev_8h.html#a17931abec6a7169432d56b3b72ce604f">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a4b500ce84df1d2551f76e635c9dafbd5">bdev.h</a>
+</li>
+<li>spdk_bdev_read_blocks()
+: <a class="el" href="bdev_8h.html#aeec9efd151e2fb34ee3d22a1edbbb53f">bdev.h</a>
 </li>
 <li>spdk_bdev_readv()
-: <a class="el" href="bdev_8h.html#a39cf118897336906dfd286b3c91295ce">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a9ac9efa882e87909acfd4bccaddb1778">bdev.h</a>
+</li>
+<li>spdk_bdev_readv_blocks()
+: <a class="el" href="bdev_8h.html#a55483d5ae010c514b37b976ad803b4b2">bdev.h</a>
 </li>
 <li>spdk_bdev_reset()
-: <a class="el" href="bdev_8h.html#a08b7c843568980d0f2e2245ee296ee4a">bdev.h</a>
+: <a class="el" href="bdev_8h.html#aca574d3e94be6150343823dd2e7ecf46">bdev.h</a>
 </li>
 <li>spdk_bdev_status
 : <a class="el" href="bdev_8h.html#ad6c166f5d928c2995df57c96a2977862">bdev.h</a>
 </li>
-<li>spdk_bdev_unclaim()
-: <a class="el" href="bdev_8h.html#ae080366bf0d3b59d0bb05f2b3e698dea">bdev.h</a>
-</li>
 <li>spdk_bdev_unmap()
-: <a class="el" href="bdev_8h.html#a1ae20739bcbd84bde357e89d96b5e5e7">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b">bdev.h</a>
+</li>
+<li>spdk_bdev_unmap_blocks()
+: <a class="el" href="bdev_8h.html#a7555fdd41019e29b40e535b72457d30b">bdev.h</a>
 </li>
 <li>spdk_bdev_write()
-: <a class="el" href="bdev_8h.html#a9dd2e65f126665954c23eff4477d4557">bdev.h</a>
+: <a class="el" href="bdev_8h.html#aa740a114ef34d6a2f126d4e3a9dd9e9b">bdev.h</a>
+</li>
+<li>spdk_bdev_write_blocks()
+: <a class="el" href="bdev_8h.html#a12da8917f525a6e11cbf22b2b7652c89">bdev.h</a>
+</li>
+<li>spdk_bdev_write_zeroes()
+: <a class="el" href="bdev_8h.html#adc50b78fec7f69190d9139aff29a9043">bdev.h</a>
+</li>
+<li>spdk_bdev_write_zeroes_blocks()
+: <a class="el" href="bdev_8h.html#a047f8a9f8d0a3d1d7bfcdf0a9838b261">bdev.h</a>
 </li>
 <li>spdk_bdev_writev()
-: <a class="el" href="bdev_8h.html#a22f12f278859dc4e0c6cdec33f9dcb24">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a9a508a1c301a1321faf0680a8f31f59a">bdev.h</a>
+</li>
+<li>spdk_bdev_writev_blocks()
+: <a class="el" href="bdev_8h.html#af5849064d12de9f140a41522d1f7c95b">bdev.h</a>
 </li>
 <li>spdk_bit_array_capacity()
 : <a class="el" href="bit__array_8h.html#a050b7786c57f20a245db5510691f3f23">bit_array.h</a>
@@ -224,6 +269,24 @@
 </li>
 <li>spdk_compiler_barrier
 : <a class="el" href="barrier_8h.html#a67d1423a31a84ead0d1550fe54743c03">barrier.h</a>
+</li>
+<li>spdk_crc32_ieee_update()
+: <a class="el" href="crc32_8h.html#a5320d8945f28627a2c5e5b15f1a997ee">crc32.h</a>
+</li>
+<li>SPDK_CRC32_POLYNOMIAL_REFLECT
+: <a class="el" href="crc32_8h.html#a0017fa45727ebbc1acae94c8c7eaf3d6">crc32.h</a>
+</li>
+<li>spdk_crc32_table_init()
+: <a class="el" href="crc32_8h.html#a948b27ad88d886a6136cdf7e7f20dd91">crc32.h</a>
+</li>
+<li>spdk_crc32_update()
+: <a class="el" href="crc32_8h.html#a7441b68a63656725b315959668b11866">crc32.h</a>
+</li>
+<li>SPDK_CRC32C_POLYNOMIAL_REFLECT
+: <a class="el" href="crc32_8h.html#ac770c030146f6feaaee33aac5196f451">crc32.h</a>
+</li>
+<li>spdk_crc32c_update()
+: <a class="el" href="crc32_8h.html#a51fc46bdf29f35610a0c99ae6ad0e009">crc32.h</a>
 </li>
 <li>spdk_delay_us()
 : <a class="el" href="env_8h.html#ab2e338ce2d6510489ae83bfff226b8b1">env.h</a>
@@ -307,7 +370,7 @@
 : <a class="el" href="io__channel_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187">io_channel.h</a>
 </li>
 <li>spdk_io_device_unregister()
-: <a class="el" href="io__channel_8h.html#abaadd707d455f3c8e44f6cdea7fee007">io_channel.h</a>
+: <a class="el" href="io__channel_8h.html#a4c6c3df3a611c10c176cb87966c622f0">io_channel.h</a>
 </li>
 <li>spdk_ioat_attach_cb
 : <a class="el" href="ioat_8h.html#a8826bf4e7c57228794f486368217a494">ioat.h</a>
@@ -366,8 +429,23 @@
 <li>spdk_json_val_len()
 : <a class="el" href="json_8h.html#a4d5aa0b66aa2cb7af428a03249b55c20">json.h</a>
 </li>
+<li>spdk_json_write_string_utf16le()
+: <a class="el" href="json_8h.html#a6f0f7b255a750c26d300957894c0a093">json.h</a>
+</li>
+<li>spdk_json_write_string_utf16le_raw()
+: <a class="el" href="json_8h.html#a1d5f6be0455ec859148b046d9d13ad03">json.h</a>
+</li>
+<li>spdk_jsonrpc_begin_result()
+: <a class="el" href="jsonrpc_8h.html#a22757fb7d0f34984e29b3fe311dfed01">jsonrpc.h</a>
+</li>
+<li>spdk_jsonrpc_end_result()
+: <a class="el" href="jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a">jsonrpc.h</a>
+</li>
 <li>spdk_jsonrpc_handle_request_fn
-: <a class="el" href="jsonrpc_8h.html#a347b2b94044109e5dd61bfd672dd0a20">jsonrpc.h</a>
+: <a class="el" href="jsonrpc_8h.html#a74afccd199dde8aaebd020ac513cf819">jsonrpc.h</a>
+</li>
+<li>spdk_jsonrpc_send_error_response()
+: <a class="el" href="jsonrpc_8h.html#a506661cfdfda6f549c69a6f4a988a026">jsonrpc.h</a>
 </li>
 <li>spdk_log_close()
 : <a class="el" href="log_8h.html#a41cdc17423a58c475fa785fd491f00e9">log.h</a>
@@ -375,11 +453,17 @@
 <li>spdk_log_get_level()
 : <a class="el" href="log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e">log.h</a>
 </li>
+<li>spdk_log_get_print_level()
+: <a class="el" href="log_8h.html#a880b1e27d71328429dbf4f65e02ff145">log.h</a>
+</li>
 <li>spdk_log_open()
 : <a class="el" href="log_8h.html#a83352187f63ade8829ca300fc7eacd54">log.h</a>
 </li>
 <li>spdk_log_set_level()
 : <a class="el" href="log_8h.html#a422b7a65819b43157a4771be78f544ee">log.h</a>
+</li>
+<li>spdk_log_set_print_level()
+: <a class="el" href="log_8h.html#ab34f1c87d98113395ab04415dbee96d8">log.h</a>
 </li>
 <li>spdk_mb
 : <a class="el" href="barrier_8h.html#a745a3ecabbce4b44d1728d08f9bf8623">barrier.h</a>
@@ -388,22 +472,22 @@
 : <a class="el" href="env_8h.html#a512b5ef37a363a4c8e234c060b734605">env.h</a>
 </li>
 <li>spdk_mem_map_clear_translation()
-: <a class="el" href="env_8h.html#a1e15bc53a3efd7236469216079252750">env.h</a>
+: <a class="el" href="env_8h.html#a2fb4967ae71277512334ad27ef481326">env.h</a>
 </li>
 <li>spdk_mem_map_free()
 : <a class="el" href="env_8h.html#af88ed69bd8b9a057f672a1170f7a5b6c">env.h</a>
 </li>
 <li>spdk_mem_map_set_translation()
-: <a class="el" href="env_8h.html#a04929e0a471db7bccfc8fa01dcef87dc">env.h</a>
+: <a class="el" href="env_8h.html#a3314f2917141bf11f5b125c306d4397d">env.h</a>
 </li>
 <li>spdk_mem_map_translate()
 : <a class="el" href="env_8h.html#aa93008c5c5f0c79c286b7edd70343ee1">env.h</a>
 </li>
 <li>spdk_mem_register()
-: <a class="el" href="env_8h.html#abca606866151a5e9b332dea9886d14d8">env.h</a>
+: <a class="el" href="env_8h.html#ae046c45de2849d15f29dedc52e915ad7">env.h</a>
 </li>
 <li>spdk_mem_unregister()
-: <a class="el" href="env_8h.html#ad9276386cda18099d1be51e34a64a4f3">env.h</a>
+: <a class="el" href="env_8h.html#a3ffa0c74e2d73703266cad2d5d103f09">env.h</a>
 </li>
 <li>spdk_mempool_count()
 : <a class="el" href="env_8h.html#a434cdf73691c745e717b8b794b2acb52">env.h</a>
@@ -472,7 +556,7 @@
 : <a class="el" href="nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852e">nvme_spec.h</a>
 </li>
 <li>spdk_nvme_ctrlr_alloc_io_qpair()
-: <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65">nvme.h</a>
+: <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_attach_ns()
 : <a class="el" href="nvme_8h.html#ae935583b7f95b13fbd2dd41255490da0">nvme.h</a>
@@ -491,6 +575,9 @@
 </li>
 <li>spdk_nvme_ctrlr_cmd_io_raw()
 : <a class="el" href="nvme_8h.html#a1e3def668122e76abbfb74305f118291">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_cmd_io_raw_with_md()
+: <a class="el" href="nvme_8h.html#afd2d8453bb2478c7b1a70c0a09c7ef4b">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_cmd_set_feature()
 : <a class="el" href="nvme_8h.html#aa9507cb98ee30e5df98474bc82190476">nvme.h</a>
@@ -512,6 +599,9 @@
 </li>
 <li>spdk_nvme_ctrlr_get_data()
 : <a class="el" href="nvme_8h.html#a5a9daf15b5008ac36c12e7b8db7bdec9">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_get_default_io_qpair_opts()
+: <a class="el" href="nvme_8h.html#a6964d09dc51882fae6f2a7cf94afc741">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_get_ns()
 : <a class="el" href="nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08">nvme.h</a>
@@ -544,7 +634,7 @@
 : <a class="el" href="nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_update_firmware()
-: <a class="el" href="nvme_8h.html#aa5bf2047c92b9bb1a20cf9493fa9ebf6">nvme.h</a>
+: <a class="el" href="nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2">nvme.h</a>
 </li>
 <li>SPDK_NVME_DATA_BIDIRECTIONAL
 : <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fcaa550f0ebf32623c8161ca7d5d8cbb0c2">nvme_spec.h</a>
@@ -687,6 +777,15 @@
 <li>spdk_nvme_ns_attach_type
 : <a class="el" href="nvme__spec_8h.html#a3828a2c3688ee12cc4c2ffce0d43031f">nvme_spec.h</a>
 </li>
+<li>spdk_nvme_ns_cmd_compare()
+: <a class="el" href="nvme_8h.html#ad8aa3c9ff510fe73945549077df18436">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_cmd_compare_with_md()
+: <a class="el" href="nvme_8h.html#a4bf7a40872bfe623a5dfa31922263532">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_cmd_comparev()
+: <a class="el" href="nvme_8h.html#a108d6b722c8837593dec16f30376d182">nvme.h</a>
+</li>
 <li>spdk_nvme_ns_cmd_dataset_management()
 : <a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d">nvme.h</a>
 </li>
@@ -741,8 +840,14 @@
 <li>SPDK_NVME_NS_FLUSH_SUPPORTED
 : <a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163ad403aafc70c00560a1db768029933400">nvme.h</a>
 </li>
+<li>spdk_nvme_ns_get_ctrlr()
+: <a class="el" href="nvme_8h.html#a2640aeebb82108e9b507dcccb1e564c2">nvme.h</a>
+</li>
 <li>spdk_nvme_ns_get_data()
 : <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_get_dealloc_logical_block_read_value()
+: <a class="el" href="nvme_8h.html#a42040dca95489218417539d2c08d815e">nvme.h</a>
 </li>
 <li>spdk_nvme_ns_get_flags()
 : <a class="el" href="nvme_8h.html#a5eff1c1b6fbfb348a1f158b3cf70626f">nvme.h</a>
@@ -758,6 +863,9 @@
 </li>
 <li>spdk_nvme_ns_get_num_sectors()
 : <a class="el" href="nvme_8h.html#a7c522609f730db26f66e7f5b6b3501e0">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_get_optimal_io_boundary()
+: <a class="el" href="nvme_8h.html#af58edc3021f8adcbecce5d3ebc5b6789">nvme.h</a>
 </li>
 <li>spdk_nvme_ns_get_pi_type()
 : <a class="el" href="nvme_8h.html#a85806a7605a104a705e7f9d3d087e4cb">nvme.h</a>
@@ -828,6 +936,18 @@
 <li>spdk_nvme_reservation_type
 : <a class="el" href="nvme__spec_8h.html#aa7e108757c0eebbac7e13b598a378210">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_SGLS_NOT_SUPPORTED
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a>
+</li>
+<li>spdk_nvme_sgls_supported
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_SGLS_SUPPORTED
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a>
+</li>
 <li>spdk_nvme_status_code_type
 : <a class="el" href="nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52">nvme_spec.h</a>
 </li>
@@ -836,6 +956,9 @@
 </li>
 <li>spdk_nvme_transport_available()
 : <a class="el" href="nvme_8h.html#ab5735e7600f79c45871b3dc3adb292f2">nvme.h</a>
+</li>
+<li>spdk_nvme_transport_id_adrfam_str()
+: <a class="el" href="nvme_8h.html#afb95c5452e84e2c5c1984341fc816ea7">nvme.h</a>
 </li>
 <li>spdk_nvme_transport_id_compare()
 : <a class="el" href="nvme_8h.html#a9878deb91f677a9a9583342f07dcef41">nvme.h</a>
@@ -848,6 +971,9 @@
 </li>
 <li>spdk_nvme_transport_id_parse_trtype()
 : <a class="el" href="nvme_8h.html#ab2afed1cce9d9334dfd127db416ada4c">nvme.h</a>
+</li>
+<li>spdk_nvme_transport_id_trtype_str()
+: <a class="el" href="nvme_8h.html#aa3a982eb5b757eae63fbc9305627090b">nvme.h</a>
 </li>
 <li>SPDK_NVME_TRANSPORT_PCIE
 : <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea162afc05d1ae756b8a7969be140035ea">nvme.h</a>
@@ -888,6 +1014,18 @@
 <li>SPDK_NVMF_CTRLR_MODEL_STATIC
 : <a class="el" href="nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bca387c04ba873422f553eec7360e4ea599">nvme_spec.h</a>
 </li>
+<li>spdk_nvmf_host_get_nqn()
+: <a class="el" href="nvmf_8h.html#acec4ed75ff9a25a5477d40f43a430677">nvmf.h</a>
+</li>
+<li>spdk_nvmf_listener_get_trid()
+: <a class="el" href="nvmf_8h.html#a6d20b0173b3c6047ad15d5972af867c5">nvmf.h</a>
+</li>
+<li>spdk_nvmf_ns_get_bdev()
+: <a class="el" href="nvmf_8h.html#af3575fee4a9db1b3c8bacbac8b605358">nvmf.h</a>
+</li>
+<li>spdk_nvmf_ns_get_id()
+: <a class="el" href="nvmf_8h.html#afdcd2be73f2653c6c14141c4cb481fe2">nvmf.h</a>
+</li>
 <li>spdk_nvmf_rdma_cms
 : <a class="el" href="nvmf__spec_8h.html#af113f4f57bccb99a0b89f5c715f1e3c3">nvmf_spec.h</a>
 </li>
@@ -921,8 +1059,47 @@
 <li>SPDK_NVMF_RDMA_QPTYPE_RELIABLE_DATAGRAM
 : <a class="el" href="nvmf__spec_8h.html#a9909d207f41934dacbc0917f083f2d43a07d9bc576d05772139a68c6e02e48429">nvmf_spec.h</a>
 </li>
+<li>spdk_nvmf_subsystem_add_host()
+: <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_add_listener()
+: <a class="el" href="nvmf_8h.html#a46521b556107a0ab58998adfeee8795f">nvmf.h</a>
+</li>
 <li>spdk_nvmf_subsystem_add_ns()
 : <a class="el" href="nvmf_8h.html#a0603a4fbabccbaa9d72780eca7c08420">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_allow_any_host()
+: <a class="el" href="nvmf_8h.html#abc793839e2268a097f97962e79e4a1ef">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_first_host()
+: <a class="el" href="nvmf_8h.html#a40147e6c89b37d85b2cce4cdb05ce787">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_first_listener()
+: <a class="el" href="nvmf_8h.html#ab1bccfb86fd4d727c2943ab810d5d862">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_first_ns()
+: <a class="el" href="nvmf_8h.html#ab797c6df2dc8fab9833de1711b6fe7f4">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_next_host()
+: <a class="el" href="nvmf_8h.html#a5265a9a3d6338c43d9fa03afd1fa9b12">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_next_listener()
+: <a class="el" href="nvmf_8h.html#ae1230525414309c87409b28484bdf964">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_next_ns()
+: <a class="el" href="nvmf_8h.html#a7c2d718965cc1e681bb1cc081a377882">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_ns()
+: <a class="el" href="nvmf_8h.html#a36c4e50d11e12f45d171fe952fcedb03">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_host_allowed()
+: <a class="el" href="nvmf_8h.html#a5f8ded88254cb17d8ee5c378f0e35a25">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_listener_allowed()
+: <a class="el" href="nvmf_8h.html#aafcef3c424a983337eaa28ff71e03e2e">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_set_allow_any_host()
+: <a class="el" href="nvmf_8h.html#a6f326a7fb95352af81b3ae8b6518b16c">nvmf.h</a>
 </li>
 <li>spdk_nvmf_subsystem_start()
 : <a class="el" href="nvmf_8h.html#accc21256a81f2052aad9a3476edbc503">nvmf.h</a>
@@ -935,6 +1112,21 @@
 </li>
 <li>SPDK_NVMF_SUBTYPE_NVME
 : <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a3077cae3ec6525a14d3c3c5005a6326f">nvmf_spec.h</a>
+</li>
+<li>spdk_nvmf_tgt_accept()
+: <a class="el" href="nvmf_8h.html#abe57cf127dca189496274350584cc783">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_create()
+: <a class="el" href="nvmf_8h.html#aa056e2c70b80bd611e21a815eae000e0">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_destroy()
+: <a class="el" href="nvmf_8h.html#a46973ac11e8b70770b0b4cc8f65a74f7">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_find_subsystem()
+: <a class="el" href="nvmf_8h.html#aae62b7fa6ac05a6ad022007f60068d16">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_listen()
+: <a class="el" href="nvmf_8h.html#ac6b8416b526f4b1ee76abd82fe588c3b">nvmf.h</a>
 </li>
 <li>spdk_nvmf_treq_secure_channel
 : <a class="el" href="nvmf__spec_8h.html#a0a92190b8c6824182974e20f84ee0a3c">nvmf_spec.h</a>
@@ -990,6 +1182,12 @@
 <li>spdk_put_io_channel()
 : <a class="el" href="io__channel_8h.html#a717571a5011db0cdd730498146f25f9a">io_channel.h</a>
 </li>
+<li>spdk_reactor_context_switch_monitor_enabled()
+: <a class="el" href="event_8h.html#a008187a6eceaba982ca2c1d452061931">event.h</a>
+</li>
+<li>spdk_reactor_enable_context_switch_monitor()
+: <a class="el" href="event_8h.html#aaceb0151a765d4068be9d37cefe37914">event.h</a>
+</li>
 <li>spdk_ring_create()
 : <a class="el" href="env_8h.html#a9f9038d37e14d07c89b399ee92bcbb87">env.h</a>
 </li>
@@ -1003,7 +1201,7 @@
 : <a class="el" href="env_8h.html#a3f1ec5c3714962d4b01ceb5a50571dca">env.h</a>
 </li>
 <li>spdk_scsi_dev_construct()
-: <a class="el" href="scsi_8h.html#aa10d7ac3a5c5a0898677361890c42c73">scsi.h</a>
+: <a class="el" href="scsi_8h.html#a023a0849997c21508fe1285b003e2a52">scsi.h</a>
 </li>
 <li>spdk_scsi_task_alloc_data()
 : <a class="el" href="scsi_8h.html#a4e63265465f997338dcad1404636174f">scsi.h</a>
@@ -1017,11 +1215,17 @@
 <li>SPDK_STATIC_ASSERT
 : <a class="el" href="assert_8h.html#ab961047b92ac1428376ef1ae1e4fa1cf">assert.h</a>
 </li>
+<li>spdk_str_chomp()
+: <a class="el" href="string_8h.html#a713ec7967f4c2c3cb8c031421edee78a">string.h</a>
+</li>
 <li>spdk_str_trim()
 : <a class="el" href="string_8h.html#a93efecd5ee3d49df20a51b65718efbd1">string.h</a>
 </li>
 <li>spdk_strcpy_pad()
 : <a class="el" href="string_8h.html#aa333ebed7fc3529d446f819b647e2d88">string.h</a>
+</li>
+<li>spdk_strerror_r()
+: <a class="el" href="string_8h.html#a3f4cfb465e06de1104d93c7a2bcb0f40">string.h</a>
 </li>
 <li>spdk_strlen_pad()
 : <a class="el" href="string_8h.html#a3c8f770428a60f0d2836d479c4b1b4e7">string.h</a>
@@ -1031,6 +1235,9 @@
 </li>
 <li>spdk_strsepq()
 : <a class="el" href="string_8h.html#ad39472adf37d067c2fbcf2b1454188c2">string.h</a>
+</li>
+<li>spdk_thread_get_name()
+: <a class="el" href="io__channel_8h.html#ae367048fa89366e845d72015064e6f76">io_channel.h</a>
 </li>
 <li>spdk_thread_send_msg()
 : <a class="el" href="io__channel_8h.html#a6aa832fea18a9160429b5383f36d8539">io_channel.h</a>
@@ -1050,6 +1257,36 @@
 <li>spdk_trace_set_tpoints()
 : <a class="el" href="trace_8h.html#a6f2131f1fc35d495f51552eb2838630b">trace.h</a>
 </li>
+<li>spdk_u32_is_pow2()
+: <a class="el" href="util_8h.html#a63e2af9bd97c1250c11a2e585336f377">util.h</a>
+</li>
+<li>spdk_unaffinitize_thread()
+: <a class="el" href="env_8h.html#a925f8e1d1ed12fc1b7eb057a5c5b7bfd">env.h</a>
+</li>
+<li>SPDK_VERSION
+: <a class="el" href="version_8h.html#af45ea3cba76c12cc449b6556c1982038">version.h</a>
+</li>
+<li>SPDK_VERSION_MAJOR
+: <a class="el" href="version_8h.html#a724bde57680bbd92b5dd6db6923a34f5">version.h</a>
+</li>
+<li>SPDK_VERSION_MINOR
+: <a class="el" href="version_8h.html#a3b5a59a1e949124decfd9cbe207966ad">version.h</a>
+</li>
+<li>SPDK_VERSION_NUM
+: <a class="el" href="version_8h.html#a63c2baa152ee5c3dad52c898b141b5d2">version.h</a>
+</li>
+<li>SPDK_VERSION_PATCH
+: <a class="el" href="version_8h.html#a89ca2b430a03f2a8b8a5f2a31c1ae647">version.h</a>
+</li>
+<li>SPDK_VERSION_STRING
+: <a class="el" href="version_8h.html#a044fb88313d084d910632cea5a06c620">version.h</a>
+</li>
+<li>SPDK_VERSION_SUFFIX
+: <a class="el" href="version_8h.html#a1636e53b1038906ece3a9addb0473bf0">version.h</a>
+</li>
+<li>spdk_vhost_call_external_event()
+: <a class="el" href="vhost_8h.html#afc95ae1497ffe77ca8fb551d7d9c289a">vhost.h</a>
+</li>
 <li>spdk_vhost_dev_next()
 : <a class="el" href="vhost_8h.html#a4365f85870f3396a837b16f4218548e6">vhost.h</a>
 </li>
@@ -1064,9 +1301,4 @@
 </li>
 </ul>
 </div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>

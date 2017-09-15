@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-ok"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -62,6 +68,12 @@
                 <a href="https://github.com/spdk/spdk/wiki/Roadmap">
                   <i class="glyphicon glyphicon-map-marker"></i>
                   <span class="box-name">Roadmap</span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="https://github.com/spdk/spdk/wiki/News">
+                  <i class="glyphicon glyphicon-bullhorn"></i>
+                  <span class="box-name">News</span>
                 </a>
               </li>
             </ul>
@@ -107,18 +119,18 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af2f500c16a2f3d67cf340a78009ad3c7"><td class="memItemLeft" align="right" valign="top"><a id="af2f500c16a2f3d67cf340a78009ad3c7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_interface_init</b> (void)</td></tr>
-<tr class="separator:af2f500c16a2f3d67cf340a78009ad3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ddcb56f1e677b845c5ebd5363002fb5"><td class="memItemLeft" align="right" valign="top"><a id="a8ddcb56f1e677b845c5ebd5363002fb5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_interface_init</b> (void)</td></tr>
+<tr class="separator:a8ddcb56f1e677b845c5ebd5363002fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c326971b1ed158209332b8f7660c673"><td class="memItemLeft" align="right" valign="top"><a id="a6c326971b1ed158209332b8f7660c673"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_interface_destroy</b> (void)</td></tr>
 <tr class="separator:a6c326971b1ed158209332b8f7660c673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8238acb467f9c6a190aac4e5fb876c8"><td class="memItemLeft" align="right" valign="top"><a id="ab8238acb467f9c6a190aac4e5fb876c8"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_net_framework_get_name</b> (void)</td></tr>
 <tr class="separator:ab8238acb467f9c6a190aac4e5fb876c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1385f69f08dee9c81304ee818595ae1d"><td class="memItemLeft" align="right" valign="top"><a id="a1385f69f08dee9c81304ee818595ae1d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_net_framework_start</b> (void)</td></tr>
-<tr class="separator:a1385f69f08dee9c81304ee818595ae1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a23d8fff8a4648d5e0153c77df33264"><td class="memItemLeft" align="right" valign="top"><a id="a5a23d8fff8a4648d5e0153c77df33264"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_net_framework_start</b> (void)</td></tr>
+<tr class="separator:a5a23d8fff8a4648d5e0153c77df33264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa60131a70fac5ee296fea233a074cbc0"><td class="memItemLeft" align="right" valign="top"><a id="aa60131a70fac5ee296fea233a074cbc0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_net_framework_clear_socket_association</b> (int sock)</td></tr>
 <tr class="separator:aa60131a70fac5ee296fea233a074cbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,9 +189,4 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_sock_is_ipv4</b>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Net framework abstraction layer. </p>
 </div></div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>

@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-ok"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -62,6 +68,12 @@
                 <a href="https://github.com/spdk/spdk/wiki/Roadmap">
                   <i class="glyphicon glyphicon-map-marker"></i>
                   <span class="box-name">Roadmap</span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="https://github.com/spdk/spdk/wiki/News">
+                  <i class="glyphicon glyphicon-bullhorn"></i>
+                  <span class="box-name">News</span>
                 </a>
               </li>
             </ul>
@@ -98,6 +110,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe transport identifier.  <a href="structspdk__nvme__transport__id.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe I/O queue pair initialization options.  <a href="structspdk__nvme__io__qpair__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -161,6 +176,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ab2afed1cce9d9334dfd127db416ada4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab2afed1cce9d9334dfd127db416ada4c">spdk_nvme_transport_id_parse_trtype</a> (enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> *trtype, const char *str)</td></tr>
 <tr class="memdesc:ab2afed1cce9d9334dfd127db416ada4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a transport ID tranport type.  <a href="#ab2afed1cce9d9334dfd127db416ada4c">More...</a><br /></td></tr>
 <tr class="separator:ab2afed1cce9d9334dfd127db416ada4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a982eb5b757eae63fbc9305627090b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa3a982eb5b757eae63fbc9305627090b">spdk_nvme_transport_id_trtype_str</a> (enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> trtype)</td></tr>
+<tr class="memdesc:aa3a982eb5b757eae63fbc9305627090b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the string representation of a transport ID transport type.  <a href="#aa3a982eb5b757eae63fbc9305627090b">More...</a><br /></td></tr>
+<tr class="separator:aa3a982eb5b757eae63fbc9305627090b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb95c5452e84e2c5c1984341fc816ea7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#afb95c5452e84e2c5c1984341fc816ea7">spdk_nvme_transport_id_adrfam_str</a> (enum <a class="el" href="nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6">spdk_nvmf_adrfam</a> adrfam)</td></tr>
+<tr class="memdesc:afb95c5452e84e2c5c1984341fc816ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the string representation of a transport ID address family.  <a href="#afb95c5452e84e2c5c1984341fc816ea7">More...</a><br /></td></tr>
+<tr class="separator:afb95c5452e84e2c5c1984341fc816ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7868a6f646a6d1bd70d5c1b8ce5757f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af7868a6f646a6d1bd70d5c1b8ce5757f">spdk_nvme_transport_id_parse_adrfam</a> (enum <a class="el" href="nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6">spdk_nvmf_adrfam</a> *adrfam, const char *str)</td></tr>
 <tr class="memdesc:af7868a6f646a6d1bd70d5c1b8ce5757f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a tranport ID address family.  <a href="#af7868a6f646a6d1bd70d5c1b8ce5757f">More...</a><br /></td></tr>
 <tr class="separator:af7868a6f646a6d1bd70d5c1b8ce5757f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,16 +230,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_ctrlr_regis
 <tr class="memitem:a8e12d6d7cf10399d0a06c99085be99bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a8e12d6d7cf10399d0a06c99085be99bf">spdk_nvme_ctrlr_register_timeout_callback</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t timeout_sec, <a class="el" href="nvme_8h.html#a53fe1c01a447be8fcd29821a668227a0">spdk_nvme_timeout_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a8e12d6d7cf10399d0a06c99085be99bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register for timeout callback on a controller.  <a href="#a8e12d6d7cf10399d0a06c99085be99bf">More...</a><br /></td></tr>
 <tr class="separator:a8e12d6d7cf10399d0a06c99085be99bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a1feac35f9a3d7dc50b1870e820ab65"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_qpair *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65">spdk_nvme_ctrlr_alloc_io_qpair</a> (struct spdk_nvme_ctrlr *ctrlr, enum <a class="el" href="nvme__spec_8h.html#ae83a61e254cf9d1fd59376ceedd1b4e6">spdk_nvme_qprio</a> qprio)</td></tr>
-<tr class="memdesc:a6a1feac35f9a3d7dc50b1870e820ab65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an I/O queue pair (submission and completion queue).  <a href="#a6a1feac35f9a3d7dc50b1870e820ab65">More...</a><br /></td></tr>
-<tr class="separator:a6a1feac35f9a3d7dc50b1870e820ab65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6964d09dc51882fae6f2a7cf94afc741"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6964d09dc51882fae6f2a7cf94afc741">spdk_nvme_ctrlr_get_default_io_qpair_opts</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:a6964d09dc51882fae6f2a7cf94afc741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default options for I/O qpair creation for a specific NVMe controller.  <a href="#a6964d09dc51882fae6f2a7cf94afc741">More...</a><br /></td></tr>
+<tr class="separator:a6964d09dc51882fae6f2a7cf94afc741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f745d239dab9b8f934fae2ad4984a2"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_qpair *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2">spdk_nvme_ctrlr_alloc_io_qpair</a> (struct spdk_nvme_ctrlr *ctrlr, const struct <a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:a13f745d239dab9b8f934fae2ad4984a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an I/O queue pair (submission and completion queue).  <a href="#a13f745d239dab9b8f934fae2ad4984a2">More...</a><br /></td></tr>
+<tr class="separator:a13f745d239dab9b8f934fae2ad4984a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85ec189f50d0f78d73a54413370401f5"><td class="memItemLeft" align="right" valign="top"><a id="a85ec189f50d0f78d73a54413370401f5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a85ec189f50d0f78d73a54413370401f5">spdk_nvme_ctrlr_free_io_qpair</a> (struct spdk_nvme_qpair *qpair)</td></tr>
-<tr class="memdesc:a85ec189f50d0f78d73a54413370401f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an I/O queue pair that was allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. <br /></td></tr>
+<tr class="memdesc:a85ec189f50d0f78d73a54413370401f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an I/O queue pair that was allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. <br /></td></tr>
 <tr class="separator:a85ec189f50d0f78d73a54413370401f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3def668122e76abbfb74305f118291"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a1e3def668122e76abbfb74305f118291">spdk_nvme_ctrlr_cmd_io_raw</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, uint32_t len, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a1e3def668122e76abbfb74305f118291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given NVM I/O command to the NVMe controller.  <a href="#a1e3def668122e76abbfb74305f118291">More...</a><br /></td></tr>
 <tr class="separator:a1e3def668122e76abbfb74305f118291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2d8453bb2478c7b1a70c0a09c7ef4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#afd2d8453bb2478c7b1a70c0a09c7ef4b">spdk_nvme_ctrlr_cmd_io_raw_with_md</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, uint32_t len, void *md_buf, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:afd2d8453bb2478c7b1a70c0a09c7ef4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given NVM I/O command with metadata to the NVMe controller.  <a href="#afd2d8453bb2478c7b1a70c0a09c7ef4b">More...</a><br /></td></tr>
+<tr class="separator:afd2d8453bb2478c7b1a70c0a09c7ef4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa331d140870e977722bfbb6826524782"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782">spdk_nvme_qpair_process_completions</a> (struct spdk_nvme_qpair *qpair, uint32_t max_completions)</td></tr>
 <tr class="memdesc:aa331d140870e977722bfbb6826524782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for I/O submitted on a queue pair.  <a href="#aa331d140870e977722bfbb6826524782">More...</a><br /></td></tr>
 <tr class="separator:aa331d140870e977722bfbb6826524782"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,15 +285,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:a9bb6973133e1fd5e7a1522ab104ac92b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a9bb6973133e1fd5e7a1522ab104ac92b">spdk_nvme_ctrlr_format</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid, struct <a class="el" href="structspdk__nvme__format.html">spdk_nvme_format</a> *format)</td></tr>
 <tr class="memdesc:a9bb6973133e1fd5e7a1522ab104ac92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format NVM.  <a href="#a9bb6973133e1fd5e7a1522ab104ac92b">More...</a><br /></td></tr>
 <tr class="separator:a9bb6973133e1fd5e7a1522ab104ac92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5bf2047c92b9bb1a20cf9493fa9ebf6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa5bf2047c92b9bb1a20cf9493fa9ebf6">spdk_nvme_ctrlr_update_firmware</a> (struct spdk_nvme_ctrlr *ctrlr, void *payload, uint32_t size, int slot)</td></tr>
-<tr class="memdesc:aa5bf2047c92b9bb1a20cf9493fa9ebf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download a new firmware image.  <a href="#aa5bf2047c92b9bb1a20cf9493fa9ebf6">More...</a><br /></td></tr>
-<tr class="separator:aa5bf2047c92b9bb1a20cf9493fa9ebf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7938b258a7614073065be4f6a35bd0e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2">spdk_nvme_ctrlr_update_firmware</a> (struct spdk_nvme_ctrlr *ctrlr, void *payload, uint32_t size, int slot, enum <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">spdk_nvme_fw_commit_action</a> commit_action, struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *completion_status)</td></tr>
+<tr class="memdesc:a7938b258a7614073065be4f6a35bd0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download a new firmware image.  <a href="#a7938b258a7614073065be4f6a35bd0e2">More...</a><br /></td></tr>
+<tr class="separator:a7938b258a7614073065be4f6a35bd0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a">spdk_nvme_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify namespace data as defined by the NVMe specification.  <a href="#ab1863b5dccf2bcc49fe92275bc1e5a2a">More...</a><br /></td></tr>
 <tr class="separator:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54052303ef2870d6d1856f79ef6ff88a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a54052303ef2870d6d1856f79ef6ff88a">spdk_nvme_ns_get_id</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a54052303ef2870d6d1856f79ef6ff88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the namespace id (index number) from the given namespace handle.  <a href="#a54052303ef2870d6d1856f79ef6ff88a">More...</a><br /></td></tr>
 <tr class="separator:a54052303ef2870d6d1856f79ef6ff88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2640aeebb82108e9b507dcccb1e564c2"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_ctrlr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a2640aeebb82108e9b507dcccb1e564c2">spdk_nvme_ns_get_ctrlr</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a2640aeebb82108e9b507dcccb1e564c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Controller with which this namespace is associated.  <a href="#a2640aeebb82108e9b507dcccb1e564c2">More...</a><br /></td></tr>
+<tr class="separator:a2640aeebb82108e9b507dcccb1e564c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af755eb3e5a5f767a5bdc544d85667898"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af755eb3e5a5f767a5bdc544d85667898">spdk_nvme_ns_is_active</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:af755eb3e5a5f767a5bdc544d85667898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a namespace is active.  <a href="#af755eb3e5a5f767a5bdc544d85667898">More...</a><br /></td></tr>
 <tr class="separator:af755eb3e5a5f767a5bdc544d85667898"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,6 +321,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:aad367fec5a8963f5d930dfae485de6b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aad367fec5a8963f5d930dfae485de6b3">spdk_nvme_ns_supports_extended_lba</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:aad367fec5a8963f5d930dfae485de6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the namespace can support extended LBA when end-to-end data protection enabled.  <a href="#aad367fec5a8963f5d930dfae485de6b3">More...</a><br /></td></tr>
 <tr class="separator:aad367fec5a8963f5d930dfae485de6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42040dca95489218417539d2c08d815e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">spdk_nvme_dealloc_logical_block_read_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a42040dca95489218417539d2c08d815e">spdk_nvme_ns_get_dealloc_logical_block_read_value</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a42040dca95489218417539d2c08d815e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the value returned when reading deallocated blocks.  <a href="#a42040dca95489218417539d2c08d815e">More...</a><br /></td></tr>
+<tr class="separator:a42040dca95489218417539d2c08d815e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58edc3021f8adcbecce5d3ebc5b6789"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af58edc3021f8adcbecce5d3ebc5b6789">spdk_nvme_ns_get_optimal_io_boundary</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:af58edc3021f8adcbecce5d3ebc5b6789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optimal I/O boundary, in blocks, for the given namespace.  <a href="#af58edc3021f8adcbecce5d3ebc5b6789">More...</a><br /></td></tr>
+<tr class="separator:af58edc3021f8adcbecce5d3ebc5b6789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5eff1c1b6fbfb348a1f158b3cf70626f">spdk_nvme_ns_get_flags</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flags for the given namespace.  <a href="#a5eff1c1b6fbfb348a1f158b3cf70626f">More...</a><br /></td></tr>
 <tr class="separator:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,6 +369,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:a9a7b5944bda3fe9ef1c83fcd2025b39a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a9a7b5944bda3fe9ef1c83fcd2025b39a">spdk_nvme_ns_cmd_reservation_report</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, uint32_t len, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a9a7b5944bda3fe9ef1c83fcd2025b39a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a reservation report to the specified NVMe namespace.  <a href="#a9a7b5944bda3fe9ef1c83fcd2025b39a">More...</a><br /></td></tr>
 <tr class="separator:a9a7b5944bda3fe9ef1c83fcd2025b39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8aa3c9ff510fe73945549077df18436"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad8aa3c9ff510fe73945549077df18436">spdk_nvme_ns_cmd_compare</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
+<tr class="memdesc:ad8aa3c9ff510fe73945549077df18436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a compare I/O to the specified NVMe namespace.  <a href="#ad8aa3c9ff510fe73945549077df18436">More...</a><br /></td></tr>
+<tr class="separator:ad8aa3c9ff510fe73945549077df18436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108d6b722c8837593dec16f30376d182"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a108d6b722c8837593dec16f30376d182">spdk_nvme_ns_cmd_comparev</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn)</td></tr>
+<tr class="memdesc:a108d6b722c8837593dec16f30376d182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a compare I/O to the specified NVMe namespace.  <a href="#a108d6b722c8837593dec16f30376d182">More...</a><br /></td></tr>
+<tr class="separator:a108d6b722c8837593dec16f30376d182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf7a40872bfe623a5dfa31922263532"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4bf7a40872bfe623a5dfa31922263532">spdk_nvme_ns_cmd_compare_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, void *metadata, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, uint16_t apptag_mask, uint16_t apptag)</td></tr>
+<tr class="memdesc:a4bf7a40872bfe623a5dfa31922263532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a compare I/O to the specified NVMe namespace.  <a href="#a4bf7a40872bfe623a5dfa31922263532">More...</a><br /></td></tr>
+<tr class="separator:a4bf7a40872bfe623a5dfa31922263532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -459,7 +504,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 </div><div class="memdoc">
 
 <p>Fill out *address and *length with the current SGL entry and advance to the next entry for the next time the callback is invoked. </p>
-<p>The cb_arg parameter is the value passed to readv/writev. The address parameter contains the virtual address of this segment. The length parameter contains the length of this physical segment. </p>
+<p>The cb_arg parameter is the value passed to readv/writev. The address parameter contains the virtual address of this segment. The length parameter contains the length of this physical segment. The described segment must be physically contiguous. </p>
 
 </div>
 </div>
@@ -553,8 +598,8 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a6a1feac35f9a3d7dc50b1870e820ab65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a1feac35f9a3d7dc50b1870e820ab65">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_alloc_io_qpair()</h2>
+<a id="a13f745d239dab9b8f934fae2ad4984a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f745d239dab9b8f934fae2ad4984a2">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_alloc_io_qpair()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,8 +613,14 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">enum <a class="el" href="nvme__spec_8h.html#ae83a61e254cf9d1fd59376ceedd1b4e6">spdk_nvme_qprio</a>&#160;</td>
-          <td class="paramname"><em>qprio</em>&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>opts_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -584,7 +635,8 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>NVMe controller for which to allocate the I/O queue pair. </td></tr>
-    <tr><td class="paramname">qprio</td><td>Queue priority for weighted round robin arbitration. If a different arbitration method is in use, pass 0. </td></tr>
+    <tr><td class="paramname">opts</td><td>I/O qpair creation options, or NULL to use the defaults as returned by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. </td></tr>
+    <tr><td class="paramname">opts_size</td><td>Must be set to sizeof(struct spdk_nvme_io_qpair_opts), or 0 if opts is NULL. </td></tr>
   </table>
   </dd>
 </dl>
@@ -633,7 +685,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
-<p>This function is thread safe and can be called at any point after spdk_nvme_attach().</p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>.</p>
 <p>Call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function. </p>
 
 </div>
@@ -974,7 +1026,76 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 <p>Send the given NVM I/O command to the NVMe controller. </p>
 <p>This is a low level interface for submitting I/O commands directly. Prefer the spdk_nvme_ns_cmd_* functions instead. The validity of the command will not be checked!</p>
 <p>When constructing the nvme_command it is not necessary to fill out the PRP list/SGL or the CID. The driver will handle both of those for you.</p>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+
+</div>
+</div>
+<a id="afd2d8453bb2478c7b1a70c0a09c7ef4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd2d8453bb2478c7b1a70c0a09c7ef4b">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_cmd_io_raw_with_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_cmd_io_raw_with_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>md_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send the given NVM I/O command with metadata to the NVMe controller. </p>
+<p>This is a low level interface for submitting I/O commands directly. Prefer the spdk_nvme_ns_cmd_* functions instead. The validity of the command will not be checked!</p>
+<p>When constructing the nvme_command it is not necessary to fill out the PRP list/SGL or the CID. The driver will handle both of those for you.</p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -1096,7 +1217,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Namespace ID (&gt;= 1) if successfully created, or 0 if the request failed.</dd></dl>
-<p>This function is thread safe and can be called at any point after spdk_nvme_attach(). </p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>. </p>
 
 </div>
 </div>
@@ -1135,7 +1256,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
-<p>This function is thread safe and can be called at any point after spdk_nvme_attach().</p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>.</p>
 <p>Call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function. </p>
 
 </div>
@@ -1182,7 +1303,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
-<p>This function is thread safe and can be called at any point after spdk_nvme_attach().</p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>.</p>
 <p>Call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function. </p>
 
 </div>
@@ -1230,7 +1351,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
-<p>This function is thread safe and can be called at any point after spdk_nvme_attach(). </p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>. </p>
 
 </div>
 </div>
@@ -1252,6 +1373,50 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 <p>Get the identify controller data as defined by the NVMe specification. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
+<a id="a6964d09dc51882fae6f2a7cf94afc741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6964d09dc51882fae6f2a7cf94afc741">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_default_io_qpair_opts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_ctrlr_get_default_io_qpair_opts </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>opts_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the default options for I/O qpair creation for a specific NVMe controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">ctrlr</td><td>NVMe controller to retrieve the defaults from. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">opts</td><td>Will be filled with the default options for <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">opts_size</td><td>Must be set to sizeof(struct spdk_nvme_io_qpair_opts). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1471,8 +1636,8 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 </div>
 </div>
-<a id="aa5bf2047c92b9bb1a20cf9493fa9ebf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5bf2047c92b9bb1a20cf9493fa9ebf6">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_update_firmware()</h2>
+<a id="a7938b258a7614073065be4f6a35bd0e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7938b258a7614073065be4f6a35bd0e2">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_update_firmware()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1499,7 +1664,19 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>slot</em>&#160;</td>
+          <td class="paramname"><em>slot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">spdk_nvme_fw_commit_action</a>&#160;</td>
+          <td class="paramname"><em>commit_action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *&#160;</td>
+          <td class="paramname"><em>completion_status</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1514,12 +1691,14 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   <table class="params">
     <tr><td class="paramname">payload</td><td>The data buffer for the firmware image. </td></tr>
     <tr><td class="paramname">size</td><td>The data size will be downloaded. </td></tr>
-    <tr><td class="paramname">slot</td><td>The slot that the firmware image will be committed to.</td></tr>
+    <tr><td class="paramname">slot</td><td>The slot that the firmware image will be committed to. </td></tr>
+    <tr><td class="paramname">commit_action</td><td>The action to perform when firmware is committed. </td></tr>
+    <tr><td class="paramname">completion_status</td><td>output parameter. Contains the completion status of the firmware commit operation.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request, -1 if the size is not multiple of 4.</dd></dl>
-<p>This function is thread safe and can be called at any point after spdk_nvme_attach(). </p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>. </p>
 
 </div>
 </div>
@@ -1542,6 +1721,277 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 <p>Detaches specified device returned by <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d">spdk_nvme_probe()</a>'s attach_cb from the NVMe driver. </p>
 <p>On success, the spdk_nvme_ctrlr handle is no longer valid.</p>
 <p>This function should be called from a single thread while no other threads are actively using the NVMe device. </p>
+
+</div>
+</div>
+<a id="ad8aa3c9ff510fe73945549077df18436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8aa3c9ff510fe73945549077df18436">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_cmd_compare </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a compare I/O to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the compare I/O </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request </td></tr>
+    <tr><td class="paramname">payload</td><td>virtual address pointer to the data payload </td></tr>
+    <tr><td class="paramname">lba</td><td>starting LBA to compare the data </td></tr>
+    <tr><td class="paramname">lba_count</td><td>length (in sectors) for the compare operation </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">nvme_spec.h</a>, for this I/O</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+
+</div>
+</div>
+<a id="a4bf7a40872bfe623a5dfa31922263532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf7a40872bfe623a5dfa31922263532">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_compare_with_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_cmd_compare_with_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>metadata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>apptag_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>apptag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a compare I/O to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the compare I/O </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request </td></tr>
+    <tr><td class="paramname">payload</td><td>virtual address pointer to the data payload </td></tr>
+    <tr><td class="paramname">metadata</td><td>virtual address pointer to the metadata payload, the length of metadata is specified by <a class="el" href="nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2" title="Get the metadata size, in bytes, of the given namespace. ">spdk_nvme_ns_get_md_size()</a> </td></tr>
+    <tr><td class="paramname">lba</td><td>starting LBA to compare the data </td></tr>
+    <tr><td class="paramname">lba_count</td><td>length (in sectors) for the compare operation </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">nvme_spec.h</a>, for this I/O </td></tr>
+    <tr><td class="paramname">apptag_mask</td><td>application tag mask. </td></tr>
+    <tr><td class="paramname">apptag</td><td>application tag to use end-to-end protection information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+
+</div>
+</div>
+<a id="a108d6b722c8837593dec16f30376d182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108d6b722c8837593dec16f30376d182">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_comparev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_cmd_comparev </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a>&#160;</td>
+          <td class="paramname"><em>reset_sgl_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a>&#160;</td>
+          <td class="paramname"><em>next_sge_fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a compare I/O to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the compare I/O </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request </td></tr>
+    <tr><td class="paramname">lba</td><td>starting LBA to compare the data </td></tr>
+    <tr><td class="paramname">lba_count</td><td>length (in sectors) for the compare operation </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">nvme_spec.h</a>, for this I/O </td></tr>
+    <tr><td class="paramname">reset_sgl_fn</td><td>callback function to reset scattered payload </td></tr>
+    <tr><td class="paramname">next_sge_fn</td><td>callback function to iterate each scattered payload memory segment</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -1616,7 +2066,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated POSIX errno values otherwise.</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
 <p>This is a convenience wrapper that will automatically allocate and construct the correct data buffers. Therefore, ranges does not need to be allocated from pinned memory and can be placed on the stack. If a higher performance, zero-copy version of DSM is required, simply build and submit a raw command using <a class="el" href="nvme_8h.html#a1e3def668122e76abbfb74305f118291" title="Send the given NVM I/O command to the NVMe controller. ">spdk_nvme_ctrlr_cmd_io_raw()</a>. </p>
 
 </div>
@@ -1670,7 +2120,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -1751,7 +2201,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -1853,7 +2303,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -1941,7 +2391,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -2022,7 +2472,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -2103,7 +2553,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -2184,7 +2634,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -2251,7 +2701,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -2332,7 +2782,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -2434,7 +2884,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -2508,7 +2958,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
 </div>
@@ -2596,7 +3046,28 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+
+</div>
+</div>
+<a id="a2640aeebb82108e9b507dcccb1e564c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2640aeebb82108e9b507dcccb1e564c2">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_ctrlr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvme_ctrlr* spdk_nvme_ns_get_ctrlr </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Controller with which this namespace is associated. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
@@ -2618,6 +3089,27 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 <p>Get the identify namespace data as defined by the NVMe specification. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
+<a id="a42040dca95489218417539d2c08d815e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42040dca95489218417539d2c08d815e">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_dealloc_logical_block_read_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">spdk_nvme_dealloc_logical_block_read_value</a> spdk_nvme_ns_get_dealloc_logical_block_read_value </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine the value returned when reading deallocated blocks. </p>
+<p>If deallocated blocks return 0, the deallocate command can be used as a more efficient alternative to the write_zeroes command, especially for large requests. </p>
 
 </div>
 </div>
@@ -2724,6 +3216,28 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 <p>Get the number of sectors for the given namespace. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
+<a id="af58edc3021f8adcbecce5d3ebc5b6789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af58edc3021f8adcbecce5d3ebc5b6789">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_optimal_io_boundary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ns_get_optimal_io_boundary </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the optimal I/O boundary, in blocks, for the given namespace. </p>
+<dl class="section return"><dt>Returns</dt><dd>Optimal granularity of I/O commands, in blocks, or 0 if no optimal granularity is reported.</dd></dl>
+<p>Read and write commands should not cross the optimal I/O boundary for best performance. </p>
 
 </div>
 </div>
@@ -2964,6 +3478,33 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 </div>
 </div>
+<a id="afb95c5452e84e2c5c1984341fc816ea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb95c5452e84e2c5c1984341fc816ea7">&#9670;&nbsp;</a></span>spdk_nvme_transport_id_adrfam_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvme_transport_id_adrfam_str </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6">spdk_nvmf_adrfam</a>&#160;</td>
+          <td class="paramname"><em>adrfam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Look up the string representation of a transport ID address family. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adrfam</td><td>Address family to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Static string constant describing adrfam, or NULL if adrmfam not found. </dd></dl>
+
+</div>
+</div>
 <a id="a9878deb91f677a9a9583342f07dcef41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9878deb91f677a9a9583342f07dcef41">&#9670;&nbsp;</a></span>spdk_nvme_transport_id_compare()</h2>
 
@@ -3134,10 +3675,32 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 </div>
 </div>
+<a id="aa3a982eb5b757eae63fbc9305627090b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a982eb5b757eae63fbc9305627090b">&#9670;&nbsp;</a></span>spdk_nvme_transport_id_trtype_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvme_transport_id_trtype_str </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a>&#160;</td>
+          <td class="paramname"><em>trtype</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Look up the string representation of a transport ID transport type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trtype</td><td>Transport type to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Static string constant describing trtype, or NULL if trtype not found. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>
